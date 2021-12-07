@@ -42,6 +42,35 @@
             padding-left: 30px;
         }
 
+        .links {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            padding-top: 150px;
+            padding-right: 30px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            text-align: center;
+        }
+
+        .button-link {
+            color: white;
+            padding: 7px 7px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border: solid;
+            margin: 10px;
+        }
+
+        .button-link:hover {
+            background-color: #e7e7e76e;
+            border: solid;
+            color: yellow;
+            padding: 10px;
+        }
+
         /* Biography container styling */
         .biography {
             display: flex;
@@ -141,9 +170,65 @@
             font-size: 130px;
         }
 
+        .videos {}
+
         .vids {
             display: block;
             margin: auto;
+        }
+
+        .vid {
+            display: none;
+        }
+
+        /* Media Queries */
+        @media only screen and (max-width: 1273px) {
+
+            .biography {
+                flex-direction: column;
+            }
+
+            .col1 {
+                padding-right: 150px;
+            }
+
+            .col2 {
+                flex: 30%;
+                padding-right: 150px;
+                padding-left: 150px;
+                padding-top: 32px;
+                padding-bottom: 32px;
+                margin: 0px;
+            }
+
+            .top-songs-head {
+                padding: 0px;
+                padding-left: 150px;
+                padding-top: 0px;
+                margin: 0px;
+                font-size: 130px;
+                text-align: inherit;
+            }
+
+            .col1-top-songs {
+                display: none;
+            }
+
+            .top-songs {
+                display: flex;
+                justify-content: center;
+                width: 450px;
+                margin: auto;
+            }
+
+            .table {
+                display: none;
+            }
+
+            .vid {
+                display: inherit;
+            }
+
         }
     </style>
 </head>
@@ -154,7 +239,15 @@
     <div class="cta">
         <img src="https://www.mac-demarco.com/wp-content/uploads/2015/07/mac-demarco-header.png" alt="Mac Demarco Logo"
             class="center" />
+        <div class="links">
+            <a class="button-link" href="https://www.stubhub.com/mac-demarco-tickets/performer/730179/"
+                target="_blank">Tour</a>
+            <a class="button-link" href="https://www.mac-demarco.com/" target="_blank">Official Page</a>
+            <a class="button-link" href="https://open.spotify.com/artist/3Sz7ZnJQBIHsXLUSo0OQtM"
+                target="_blank">Listen</a>
+        </div>
     </div>
+
 
     <!-- Biography Section-->
     <h1 class="bio-head">Bio.</h1>
@@ -213,7 +306,7 @@
     <!-- Videos -->
     <h3 class="videos-head">Videos.</h3>
     <div class="videos">
-        <table style="width:100%">
+        <table class="table" style="width:100%">
             <tr>
                 <td><iframe class="vids" width="420" height="315" src="https://www.youtube.com/embed/Sua-J-02qIw">
                     </iframe></td>
@@ -223,6 +316,12 @@
                     </iframe></td>
             </tr>
         </table>
+        <div class=vid><iframe class="vids" width="420" height="315" src="https://www.youtube.com/embed/Sua-J-02qIw">
+            </iframe></div>
+        <div class=vid><iframe class="vids" width="420" height="315" src="https://www.youtube.com/embed/nJka0AazVU0">
+            </iframe></div>
+        <div class=vid><iframe class="vids" width="420" height="315" src="https://www.youtube.com/embed/z5RSQaF0I2o">
+            </iframe></div>
     </div>
 
 
